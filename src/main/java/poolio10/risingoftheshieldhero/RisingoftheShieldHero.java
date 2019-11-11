@@ -1,4 +1,4 @@
-package poolio10.risingoftheshieldheromod;
+package poolio10.risingoftheshieldhero;
 
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
@@ -9,15 +9,15 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = RisingoftheShieldHero.MODID, name = RisingoftheShieldHero.NAME, version = RisingoftheShieldHeroMod.VERSION, acceptedMinecraftVersions = RisingoftheShieldHeroMod.MC_VERSION)
-public class RisingoftheShieldHeroMod {
+@Mod(modid = RisingoftheShieldHero.MODID, name = RisingoftheShieldHero.NAME, version = RisingoftheShieldHero.VERSION, acceptedMinecraftVersions = RisingoftheShieldHero.MC_VERSION)
+public class RisingoftheShieldHero {
 
     public static final String MODID = "risingoftheshieldhero";
-    public static final String NAME = "Rising of the Shield Hero";
-    public static final String VERSION = "1.0.0";
-    public static final String MC_VERSION = "[1.12.2]";
+    static final String NAME = "Rising of the Shield Hero";
+    static final String VERSION = "1.0.0";
+    static final String MC_VERSION = "[1.12.2]";
 
-    public static final Logger LOGGER = LogManager.getLogger(RisingoftheShieldHeroMod.MODID);
+    private static final Logger LOGGER = LogManager.getLogger(RisingoftheShieldHero.MODID);
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
@@ -26,7 +26,7 @@ public class RisingoftheShieldHeroMod {
 
     @EventHandler
     public void init(FMLInitializationEvent event) {
-        LOGGER.info(RisingoftheShieldHeroMod.NAME + " says hi!");
+        LOGGER.info(RisingoftheShieldHero.NAME + " says hi!");
     }
 
     @EventHandler
