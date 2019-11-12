@@ -18,7 +18,7 @@ public class ModItems {
         @SubscribeEvent
         public static void registerItems(Register<Item> event) {
             final Item[] items = {
-                    new Item().setRegistryName(RisingoftheShieldHero.MODID, "zombie_dragon_stone").setTranslationKey(RisingoftheShieldHero.MODID + "." + "zombie_dragon_stone").setCreativeTab(CreativeTabs.MISC)
+                    new Item().setRegistryName(RisingoftheShieldHero.MODID, "zombie_dragon_stone").setUnlocalizedName(RisingoftheShieldHero.MODID + "." + "zombie_dragon_stone").setCreativeTab(CreativeTabs.MISC)
             };
 
             event.getRegistry().registerAll(items);
